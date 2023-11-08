@@ -1,11 +1,16 @@
 import React from 'react'
 
-export default function Questions() {
+export default function Questions(props) {
+
+
   return (
-    <div className='questions'>
-        <h1 className='title'>React</h1>
-        <label>What is react</label>
-        <input type='radio'></input>
-    </div>
+    <>
+      
+      <div className='questions'>
+          <p>{props.question}</p>
+      </div>
+  
+    </>
   )
+    
 }
